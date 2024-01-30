@@ -7,29 +7,30 @@
     <title>Web 3.0 Explained</title>
     <link rel ="stylesheet" href="style.css">
     <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
-    <link hrek="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 
     <style>
         .hover-color-change{
-            color: blue;
+            color: #131617f2;
             transition: color 0.3s;
         }
 
         .hover-color-change:hover{
-            color: rgb(104, 104, 160);
+            color: #c9914c;
             
         }
         body {
             
-            .ihero {
+            .hero {
                 width: 80%;
                 height: 450px;
                 position: relative;
-                margin: 100px auto;
+                margin: 1px auto;
             }
             .btn-box{
                 display:flex;
                 border-bottom: 1px solid #ccc;
+                position: relative;
             }
             .btn-box button{
                 background: transparent;
@@ -46,25 +47,40 @@
             }
 
             .content-right img{
-                /* width: 350px; not requirerd since there is no image to manipulate */
-            }
+                 width: 350px;  
+            } 
             .content{
                 display: flex;
                 justify-content: center;
                 text-align: center;
                 margin: 5% auto;
+                position: absolute;
+                transform: translateX(100%);
             }
             .content-left{
                 flex-basis: 50%;
-            }
-            .content-rigth{
-                flex-basis: 50%;
+                align-items: center;  
             }
 
-            font-family: 'Arial', sans-serif;
+            .content-left a{
+                width: 150px;
+                display: block;
+                padding: 8px 8px;
+                border-radius: 20px;
+                text-decoration: none;
+                background-color: #e04a4a;
+                color: #000000;
+                text-align: center;
+            }
+           
+            .content-right{
+                flex-basis: 30%;
+                align-items: center;
+            }
+
+            font-family: 'Poppins', sans-serif;
             margin: 0;
-            padding: 0;
-            background-image: url('https://cdn.discordapp.com/attachments/1196104319930474568/1201858951713652776/3d-render-abstract-background-with-network-communications-design.jpg?ex=65cb595f&is=65b8e45f&hm=dac8cf366ed45e85db2532173a13ab9e1c23c033bbba3fb78236e1ab714a278e&'); /* Updated background image link */
+            padding: 10;
             background-size: cover;
             background-position: center;
             background-color: #f0f0f0;
@@ -72,22 +88,25 @@
         }
 
         header {
-            background-color: #2c7ba59c;
-            padding: 20px;
+            background-color: #131617f2;
+            padding: 0.2px;
             text-align: center;
         }
 
         h1 {
-            color: #ffffff;
+            color: #c73939;
         }
-
-        section {
-            max-width: 800px;
+        
+        a{
+            text-decoration: none;
+        }
+         /*section {
+            max-width: 1800px; 
             margin: 20px auto;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.7); /* Background color with 70% opacity */
+            background-color: rgba(255, 255, 255, 0.7); /* Background color with 70% opacity 
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+        }*/
 
         article {
             margin-bottom: 20px;
@@ -96,13 +115,11 @@
         h2 {
             
             padding: 14px 16px;
-            color: blue;
+            color: #bb1a1a;
             transition: color 0.3s;
             
         }
-        h2:hover{
-            background-color:  
-        }
+        
         
         ul {
             list-style: none;
@@ -111,8 +128,8 @@
 
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: #5e2ca5;
+            padding: 0.2px;
+            background-color: #131617f2;
             color: #fff;
         }
     </style>
@@ -122,54 +139,43 @@
         <h1>Web 3.0 Explained</h1>
     </header>
     <section>
-        <div class="hero">
+        <div class="hero" position="relative">
             <div class="btn-box">
-                <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><a href="https://example.com" target="_blank" class="hover-color-change">HTML</h2>       </a>                      
+                <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><a href="https://example.com" target="_blank" class="hover-color-change">HTML</h2></a>                      
                 
-                <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class="hover-color-change"><i class="fa-css3"></i>CSS</h2>
-                
-                <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class="hover-color-change">Javascript</h2>
+                <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><a href="https://example.com" target="_blank" class="hover-color-change">CSS</h2></a>
+
+                <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><a href="https://example.com" target="_blank" class="hover-color-change">JavaScript</h2></a>
+
             </div>
-            <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class=" content-left"><h1>Learn HTML</h1> 
+            <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class=" content-left" position="absolute"><h1>Learn HTML</h1> 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, totam tempora 
                 nostrum quas officia dicta odio, delectus asperiores corrupti velit non, harum laborum. Corrupti facere voluptas incidunt labore alias voluptates.
-                </p> <a href="#">WATCH VIDEO</a>
+                </p> <a href="https://www.youtube.com" target = "_blank" class="hover-color-change">WATCH VIDEO</a>
+            </div>
+            
+            <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class=" content-left"><h1>Learn CSS</h1> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, totam tempora 
+                nostrum quas officia dicta odio, delectus asperiores corrupti velit non, harum laborum. Corrupti facere voluptas incidunt labore alias voluptates.
+                </p> <a href="https://www.youtube.com" target = "_blank" class="hover-color-change">WATCH VIDEO</a>
+            </div>
+            
+            <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class=" content-left"><h1>Learn JavaScript</h1> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, totam tempora 
+                nostrum quas officia dicta odio, delectus asperiores corrupti velit non, harum laborum. Corrupti facere voluptas incidunt labore alias voluptates.
+                </p> <a href="https://www.youtube.com" target = "_blank" class="hover-color-change">WATCH VIDEO</a>
             </div>
              <div class=" content-right"><img src=""></div> <!--to add an image for more description -->
 
         
         </div>
 
-        <article style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-            <h2 >What is Web 3.0?</h2>
-            <p>
-                Web 3.0, often referred to as the Semantic Web, is the next evolution of the World Wide Web. It aims to make data more interconnected, intelligent, and easily understandable by machines, enabling advanced automation, artificial intelligence, and enhanced user experiences.
-            </p>
-        </article>
-        <article style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-            <h2>Key Features of Web 3.0</h2>
-            <ul>
-                <li>Decentralization using blockchain technology</li>
-                <li>Interoperability between different platforms and services</li>
-                <li>Advanced artificial intelligence and machine learning integration</li>
-                <li>Semantic understanding of data for improved search and analysis</li>
-                <li>Enhanced privacy and security measures</li>
-            </ul>
-        </article>
-        <article style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-            <h2>Examples of Web 3.0 Technologies</h2>
-            <ul>
-                <li>Blockchain-based platforms (e.g., Ethereum, Polkadot)</li>
-                <li>Decentralized applications (DApps)</li>
-                <li>AI-driven personalized services</li>
-                <li>Linked Data and Semantic Web technologies</li>
-                <li>Privacy-focused technologies (e.g., Solid)</li>
-            </ul>
-        </article>
+        
+        
     </section>
     
-    <footer>
+    <!-- <footer>
         <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">&copy; 2024 Web 3.0 Explained</p>
-    </footer>
+    </footer> -->
 </body>
 </html>
