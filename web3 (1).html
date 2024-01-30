@@ -10,9 +10,18 @@
     <link hrek="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 
     <style>
+        .hover-color-change{
+            color: blue;
+            transition: color 0.3s;
+        }
+
+        .hover-color-change:hover{
+            color: rgb(104, 104, 160);
+            
+        }
         body {
             
-            .hero {
+            .ihero {
                 width: 80%;
                 height: 450px;
                 position: relative;
@@ -32,6 +41,26 @@
                 font-size: 20px;
                 font-weight: bold;
             }
+            .btn-box .fa{
+                margin-right: 20px;
+            }
+
+            .content-right img{
+                /* width: 350px; not requirerd since there is no image to manipulate */
+            }
+            .content{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin: 5% auto;
+            }
+            .content-left{
+                flex-basis: 50%;
+            }
+            .content-rigth{
+                flex-basis: 50%;
+            }
+
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
@@ -39,7 +68,7 @@
             background-size: cover;
             background-position: center;
             background-color: #f0f0f0;
-            color: #333;
+            
         }
 
         header {
@@ -53,11 +82,11 @@
         }
 
         section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Background color with 70% opacity */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Background color with 70% opacity */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
         article {
@@ -65,9 +94,16 @@
         }
 
         h2 {
-            color: #5e2ca5;
+            
+            padding: 14px 16px;
+            color: blue;
+            transition: color 0.3s;
+            
         }
-
+        h2:hover{
+            background-color:  
+        }
+        
         ul {
             list-style: none;
             padding: 0;
@@ -88,18 +124,29 @@
     <section>
         <div class="hero">
             <div class="btn-box">
-                <button><i class="fa-brands fa-css3"></i>HTML</button>                              
+                <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><a href="https://example.com" target="_blank" class="hover-color-change">HTML</h2>       </a>                      
                 
-                <button><i class="fa-brands fa-css3"></i>CSS</button>
+                <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class="hover-color-change"><i class="fa-css3"></i>CSS</h2>
                 
-                <button><i class="fa-brands fa-js"></i>Javascript</button>
-        <article>
-            <h2>What is Web 3.0?</h2>
+                <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class="hover-color-change">Javascript</h2>
+            </div>
+            <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class=" content-left"><h1>Learn HTML</h1> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, totam tempora 
+                nostrum quas officia dicta odio, delectus asperiores corrupti velit non, harum laborum. Corrupti facere voluptas incidunt labore alias voluptates.
+                </p> <a href="#">WATCH VIDEO</a>
+            </div>
+             <div class=" content-right"><img src=""></div> <!--to add an image for more description -->
+
+        
+        </div>
+
+        <article style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            <h2 >What is Web 3.0?</h2>
             <p>
                 Web 3.0, often referred to as the Semantic Web, is the next evolution of the World Wide Web. It aims to make data more interconnected, intelligent, and easily understandable by machines, enabling advanced automation, artificial intelligence, and enhanced user experiences.
             </p>
         </article>
-        <article>
+        <article style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
             <h2>Key Features of Web 3.0</h2>
             <ul>
                 <li>Decentralization using blockchain technology</li>
@@ -109,7 +156,7 @@
                 <li>Enhanced privacy and security measures</li>
             </ul>
         </article>
-        <article>
+        <article style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
             <h2>Examples of Web 3.0 Technologies</h2>
             <ul>
                 <li>Blockchain-based platforms (e.g., Ethereum, Polkadot)</li>
@@ -122,7 +169,7 @@
     </section>
     
     <footer>
-        <p>&copy; 2024 Web 3.0 Explained</p>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">&copy; 2024 Web 3.0 Explained</p>
     </footer>
 </body>
 </html>
