@@ -10,3 +10,5 @@ TEAM MEMBERS:-
 PROJECT IDEA :-
     The main idea of the project is to create a timetable management system where the user can enter their credentials and view their individual timetables. If suppose they want to mee with their friends or faculty, they can enter the concerned individial's free/ avaialable timings and also ping them for a meetup.
 
+
+hee haaaw
