@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 2.0 Overview</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('https://cdn.discordapp.com/attachments/1196104319930474568/1201951177521246230/abstract-techno-background-with-connecting-lines.jpg?ex=65cbaf43&is=65b93a43&hm=bf0f000337a525b6a27bdd069fe19776ab9a4e8e270fc3a94512c81870a0e020&');
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color: rgba(52, 152, 219, 0.9); /* Reduced opacity */
+            color: #fff;
+            padding: 1.5em 0;
+            transition: background-color 0.3s;
+        }
+
+        header:hover {
+            background-color: rgba(153, 200, 234, 0.9); /* Lighter color on hover */
+        }
+
+        section {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: rgba(255, 255, 255, 0.7); /* 70% opacity */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #01136a;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Styling for the fixed bars on the sides */
+        .fixed-bar {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 0px;
+            background-color: rgba(52, 152, 219, 0.9); /* Reduced opacity */
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+
+        .fixed-bar:hover {
+            background-color: rgba(79, 163, 224, 0.9); /* Lighter color on hover */
+        }
+
+        .fixed-bar-left {
+            left: 0;
+        }
+
+        .fixed-bar-right {
+            right: 0;
+        }
+
+        /* Styling for the bottom bar */
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 20px;
+            background-color: rgba(52, 152, 219, 0.9); /* Reduced opacity */
+            transition: background-color 0.3s;
+        }
+
+        .bottom-bar:hover {
+            background-color: rgba(79, 163, 224, 0.9); /* Lighter color on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left fixed bar -->
+    <div class="fixed-bar fixed-bar-left">
+    </div>
+
+    <!-- Right fixed bar -->
+    <div class="fixed-bar fixed-bar-right">
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1>Web 2.0 Overview</h1>
+    </header>
+
+    <!-- Main Content -->
+    <section>
+        <p>
+            Here, we briefly describe Web 2.0 and its impact on the internet. Web 2.0 represents a shift towards more dynamic, user-friendly, and interactive web platforms.
+        </p>
+        
+        <img src="https://cdn.discordapp.com/attachments/1196104319930474568/1201928195776192512/web-2.jpg?ex=65cb99dc&is=65b924dc&hm=112e789e2c6091ed889f0b457109c9cd7c9e766ccb4542e505513461bcab01fd&" alt="Image 1">
+        <p>
+            Web 2.0 (also known as participative (or participatory) web and social web) refers to websites that emphasize user-generated content, ease of use, participatory culture and interoperability (i.e., compatibility with other products, systems, and devices) for end users.
+
+The term was coined by Darcy DiNucci in 1999 and later popularized by Tim O'Reilly and Dale Dougherty at the first Web 2.0 Conference in 2004. Although the term mimics the numbering of software versions, it does not denote a formal change in the nature of the World Wide Web, but merely describes a general change that occurred during this period as interactive websites proliferated and came to overshadow the older, more static websites of the original Web.
+        </p>
+        
+        <img src="https://cdn.discordapp.com/attachments/1196104319930474568/1201928935986962462/IMG_20211221_190219_476.png?ex=65cb9a8d&is=65b9258d&hm=0e309c6f2c03426a0ad3872a57eca1183752b09dda653c6144b7e4c4806c7288&" alt="Image 2">
+        <p>
+            Web 2.0 describes the current state of the internet, which has more user-generated content and usability for end-users compared to its earlier incarnation, Web 1.0. It does not refer to any specific technical upgrades to the internet; it refers to a shift in how the internet is used.
+        </p>
+        <p><a href="https://en.wikipedia.org/wiki/Web_2.0" target="_blank">Click here for more info</a></p>
+
+    </section>
+
+    <!-- Bottom bar -->
+    <div class="bottom-bar"></div>
+
+</body>
+</html>
