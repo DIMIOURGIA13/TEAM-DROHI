@@ -30,9 +30,6 @@
             transition: background-color 0.3s;
         }
 
-        header:hover {
-            background-color: rgba(153, 200, 234, 0.9); /* Lighter color on hover */
-        }
 
         section {
             flex-grow: 1;
@@ -51,7 +48,9 @@
         h1 {
             color: #01136a;
         }
-
+        h1:hover{
+            color: #000000;
+        }
         p {
             line-height: 1.6;
             color: #555;
@@ -116,9 +115,9 @@
 
     <!-- Main Content -->
     <section>
-        <p>
-            Here, we briefly describe Web 2.0 and its impact on the internet. Web 2.0 represents a shift towards more dynamic, user-friendly, and interactive web platforms.
-        </p>
+        <!-- <p>
+
+        </p> -->
         
         <img src="https://cdn.discordapp.com/attachments/1196104319930474568/1201928195776192512/web-2.jpg?ex=65cb99dc&is=65b924dc&hm=112e789e2c6091ed889f0b457109c9cd7c9e766ccb4542e505513461bcab01fd&" alt="Image 1">
         <p>
@@ -131,7 +130,44 @@ The term was coined by Darcy DiNucci in 1999 and later popularized by Tim O'Reil
         <p>
             Web 2.0 describes the current state of the internet, which has more user-generated content and usability for end-users compared to its earlier incarnation, Web 1.0. It does not refer to any specific technical upgrades to the internet; it refers to a shift in how the internet is used.
         </p>
-        <p><a href="./web3.html" target="_blank">To Page 3</a></p>
+
+        <h2>Comparison</h2>
+    
+    <!-- Left side of the comparison -->
+    <div style="float: left; width: 80%;">
+        <h3>FrontEnd Things</h3>
+        <p>
+            - HTML, CSS, and JavaScript work seamlessly together to create cohesive and
+            interactive web experiences.<br>
+            - HTML provides the structure, CSS styles the elements, and JavaScript adds behaviour
+            and functionality.<br>
+            - They interact through the Document Object Model (DOM), where JavaScript can
+            access and manipulate HTML and CSS dynamically
+        </p>
+    </div>
+    <div style="float: right; width: 80%;">
+        <h3>BackEnd Things</h3>
+        <p>
+
+
+- The backend is responsible for efficiently processing and storing vast amounts of user-generated data. This includes content uploads, interactions, and other dynamic elements, emphasizing a shift from static to dynamic web content.
+Server-Side Interactivity. <br>
+
+- The backend in Web 2.0 enables server-side interactivity, allowing for real-time updates and dynamic content delivery. This contrasts with Web 1.0, where websites were primarily static, and most processing occurred on the client side.<br>
+
+- Relies on the backend to provide APIs (Application Programming Interfaces) that facilitate seamless integration with third-party services and platforms. This promotes interoperability, enabling developers to create more interactive and feature-rich web applications.
+        </p>
+    </div>
+
+    <p><a href="./web3.html" target="_blank">To Page 3</a></p>
+    <!-- Right side of the comparison -->
+    <!-- <div style="float: right; width: 45%;">
+        <h3>Your Input</h3>
+        <!-- You can add your own input here 
+        <textarea rows="4" cols="50" placeholder="Enter your comparison text here"></textarea>
+    </div> -->
+
+    <div style="clear: both;"></div>
 
     </section>
 
