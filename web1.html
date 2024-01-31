@@ -28,7 +28,7 @@
 
         header {
             background-color: rgba(87, 132, 178, 0.799); /* Add transparency to the header background */
-            padding: 20px;
+            padding: 2px;
             text-align: center;
         }
 
@@ -45,7 +45,7 @@
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Apply BankGothic Md BT font */
             font-size: 2.9em;
             margin-bottom: 20px;
-            color: #7c2424; /* Change heading color to white */
+            color: #ffffff; /* Change heading color to white */
         }
 
         h2 {
@@ -62,9 +62,14 @@
             transition: color 0.3s ease;
         }
 
-        h2:hover,
-        h3:hover {
-            color: #FF8C00;  
+        .hover-color-change{
+            color: #84e893;
+            transition: color 0.3s;
+        }
+        
+        .hover-color-change:hover{
+            color: #FF8C00;
+            
         }
 
         p {
@@ -82,8 +87,15 @@
             transition: background-color 0.3s ease; /* Transition for color change */
         }
 
-        section:hover {
-            background-color: rgba(255, 255, 255, 0.8); /* Updated background color on hover */
+        /* section:hover {
+            background-color: rgba(255, 255, 255, 0.8); //Updated background color on hover 
+        } */
+
+        footer {
+            text-align: center;
+            padding: 0.2px;
+            background-color: rgba(87, 132, 178, 0.9);
+            color: #000000;
         }
     </style>
 </head>
@@ -100,18 +112,21 @@
          A blockchain-based internet fostering innovation transforming the digital world we are so integrated in!</p>
 
         <section>
-            <h3><a href="./web2.html" target="_blank">WEB 2?</a></h3>
+            <h3><a href="./web2.html" target="_blank" class="hover-color-change">WEB 2?</a></h3>
             <p>Before we go on the journey to the world of web 3.0 we should have an idea what existed before it and what makes up is foundations!
-                <br>Poke the heading above to get teleported to the past ;)
+                <br>Poke the heading above to get teleported to the past ;
             </p>
         </section>
 
         <section>
-            <h3><a href="./web3.html" target="_blank">WEB 3.0?</a></h3>
+            <h3><a href="./web3.html" target="_blank" class="hover-color-change">WEB 3.0?</a></h3>
             <p>Web3 is a term used to describe the next iteration of the internet, one that is built on blockchain technology and is communally controlled by its users. 
                 <br>Nudge the heading above to get a hint of the future >>>> </p>
         </section>
     </main>
-    <a href="/web2.html" target="_blank">Link to page 2</a>
+    <!-- <a href="/web2.html" target="_blank">Link to page 2</a> -->
+    <footer>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #fff;" >&copy; 2024 Team Drohi</p>
+    </footer>
 </body>
 </html>
