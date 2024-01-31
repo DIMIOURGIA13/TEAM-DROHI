@@ -8,7 +8,5 @@ TEAM MEMBERS:-
 5. Shaurya Dawra
 
 PROJECT IDEA :-
-    The main idea of the project is to create a timetable management system where the user can enter their credentials and view their individual timetables. If suppose they want to mee with their friends or faculty, they can enter the concerned individial's free/ avaialable timings and also ping them for a meetup.
+    The main idea of the project is to create a website for a general overview on Web3 and its various technologies and frameworks. Using HTML5 and CSS3, it is a very basic frontend site showcasing useful features of Web3 and informatiion about the previous versions (Web2 and Web1).
 
-
-hee haw
